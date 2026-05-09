@@ -88,11 +88,11 @@ export default function DashboardScreen() {
 
         {/* Today's Shifts */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Aujourd'hui</Text>
+          <Text style={styles.sectionTitle}>{'Aujourd\'hui'}</Text>
           {todaySchedules.length === 0 ? (
             <View style={styles.emptyState}>
               <Text style={styles.emptyIcon}>📅</Text>
-              <Text style={styles.emptyLabel}>Aucun shift prévu aujourd'hui</Text>
+              <Text style={styles.emptyLabel}>{'Aucun shift prévu aujourd\'hui'}</Text>
             </View>
           ) : (
             todaySchedules.map((s) => {

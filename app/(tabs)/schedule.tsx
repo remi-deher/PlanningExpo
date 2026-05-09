@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   StyleSheet,
   View,
@@ -100,8 +100,6 @@ function ScheduleCard({ schedule, collaboratorName, collaboratorRole, notes }: {
 }
 
 // ─── Screen ───────────────────────────────────────────────────────────────────
-
-import { useState } from 'react';
 
 export default function ScheduleScreen() {
   const { schedules, collaborators } = useAppStore();
